@@ -1,3 +1,4 @@
+// const(Can't be changed) , let , var 
 const accountId = 2007
 let accountEmail = "himanshu@gmail.com"
 var accountPassword = "1980"
