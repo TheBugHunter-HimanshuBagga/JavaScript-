@@ -25,7 +25,7 @@ console.log(id === anotherId) // false
 
 const BigNumber = 32346745816n
 
-// Array , Objects , Finctions
+// Array , Objects , Functions
 
 const iphones = ["Iphone 13" , "Iphone 14" , "Iphone 15"]
 
@@ -43,3 +43,23 @@ console.log(typeof BigNumber) // bigint
 console.log(typeof outsideTemp) // Object
 
 console.log(typeof anotherId) // symbol
+
+// stack(Primitive) - value and Heap(Non primitive) - reference
+console.log("")
+let myYoutubeName = "Himanshu Bagga"
+
+let anotherName = myYoutubeName
+anotherName = "ChaiAurCode"
+console.log(myYoutubeName)
+console.log(anotherName)
+// primitive datatype goes in stack
+// non primitive datatypes goes in heap
+let userone = {
+    email: "Himanshu@gmail.com",
+    upi: "abc@ybl",
+}
+let usertwo = userone
+usertwo.email = "himanshu@google.com"
+console.log(userone.email) // himanshu@google.com
+console.log(usertwo.email) // himanshu@google.com
+// Both got same value as it is stored in the heap since it is a Non primitive
